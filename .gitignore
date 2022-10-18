@@ -1,3 +1,5 @@
 #password folder
 ./secrets
 secrets/dbSecrets.php
+
+/.idea
