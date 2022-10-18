@@ -1,2 +1,3 @@
 #password folder
-/secrets
+./secrets
+secrets/dbSecrets.php
