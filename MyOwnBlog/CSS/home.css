@@ -1,0 +1,50 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+#topBar{
+    width: 100%; height: 50px;
+
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+#topBar ul{
+    padding: 0; margin: 0;
+
+    list-style: none;
+    color: white;
+
+    display: flex;
+}
+#topBar ul li{
+    float: left;
+    padding-left: 1rem;
+
+    align-self: center;
+}
+#topBar a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#left{
+    order: 0;
+    flex-grow: 4;
+
+    display: flex;
+
+}
+#right{
+    order: 1;
+    flex-grow: 1;
+
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+
+    padding-right: 1rem;
+}
