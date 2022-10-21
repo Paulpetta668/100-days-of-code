@@ -1,0 +1,22 @@
+{
+  "name": "100-days-of-code",
+  "version": "1.0.0",
+  "description": "Twitter bot, API for the website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paulpetta668/100-days-of-code.git"
+  },
+  "author": "Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paulpetta668/100-days-of-code/issues"
+  },
+  "homepage": "https://github.com/Paulpetta668/100-days-of-code#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

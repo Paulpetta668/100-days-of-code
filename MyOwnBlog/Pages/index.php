@@ -1,35 +1,35 @@
 <?php
-session_start();
+    session_start();
 
-$User = "xxxx";
-$Pass = "xxxx";
-$DB = "xxxx";
+    $User = "Blog";
+    $Pass = "umsWXa&jVA63X5vd";
+    $DB = "blogDB";
 
-if (!isset($_COOKIE["login"])) {
-    header("Location: login.php");
-} else {
-    $cookie = $_COOKIE["login"];
-    $cookie = explode("|", $cookie);
-
-    $userID = $cookie[0];
-    $token = $cookie[1];
-
-    $conn = new mysqli("localhost", $User, $Pass, $DB);
-    $query = "SELECT * FROM LogTokens WHERE UserIDf = $userID AND Token = '" . hash('sha256', $token) . "' AND ExpiryDate > " . time();
-
-    $result = $conn->query($query);
-    if ($result->num_rows > 0) {
-        //Get user info
-        $query = "SELECT * FROM User WHERE UserID = $userID";
-        $result = $conn->query($query);
-        $row = $result->fetch_assoc();
-
-        $name = $row["Name"];
-        $surname = $row["Surname"];
-    } else {
+    if (!isset($_COOKIE["login"])) {
         header("Location: login.php");
+    } else {
+        $cookie = $_COOKIE["login"];
+        $cookie = explode("|", $cookie);
+
+        $userID = $cookie[0];
+        $token = $cookie[1];
+
+        $conn = new mysqli("localhost", $User, $Pass, $DB);
+        $query = "SELECT * FROM LogTokens WHERE UserIDf = $userID AND Token = '" . hash('sha256', $token) . "' AND ExpiryDate > " . time();
+
+        $result = $conn->query($query);
+        if ($result->num_rows > 0) {
+            //Get user info
+            $query = "SELECT * FROM User WHERE UserID = $userID";
+            $result = $conn->query($query);
+            $row = $result->fetch_assoc();
+
+            $name = $row["Name"];
+            $surname = $row["Surname"];
+        } else {
+            header("Location: login.php");
+        }
     }
-}
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -52,7 +52,7 @@ if (!isset($_COOKIE["login"])) {
         <div id="right">
             <p>
                 <?php
-                    echo "Welcome, " . $name . " " . $surname;
+                echo "Welcome, " . $name . " " . $surname;
                 ?>
             </p>
             <div>

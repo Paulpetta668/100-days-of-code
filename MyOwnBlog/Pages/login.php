@@ -3,9 +3,9 @@
 
     if(isset($_COOKIE["login"])) header("Location: index.php");
 
-$User = "xxxx";
-$Pass = "xxxx";
-$DB = "xxxx";
+    $User = "Blog";
+    $Pass = "umsWXa&jVA63X5vd";
+    $DB = "blogDB";
 
     $conn = new mysqli("localhost", $User, $Pass); // Create connection
 

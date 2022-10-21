@@ -1,9 +1,9 @@
 <?php
     session_start();
 
-$User = "xxxx";
-$Pass = "xxxx";
-$DB = "xxxx";
+    $User = "Blog";
+    $Pass = "umsWXa&jVA63X5vd";
+    $DB = "blogDB";
 
     if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["pass"])){
         $nome = $_POST["name"];
