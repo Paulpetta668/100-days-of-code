@@ -1,4 +1,5 @@
 <?php
+    include_once "../Classes/User.php";
     session_start();
 
     $User = "Blog";
@@ -24,45 +25,37 @@
             $result = $conn->query($query);
             $row = $result->fetch_assoc();
 
-            $name = $row["Name"];
-            $surname = $row["Surname"];
+            $user = new User($row["UserID"], $row["Name"], $row["Surname"], $row["Email"]);
         } else {
             setcookie("login", "", time() - 3600, "/");
 
             header("Location: login.php");
         }
     }
-
-
 ?>
-<!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-    <title>Home</title>
-
-    <link type="text/css" rel="stylesheet" href="../CSS/home.css">
-    <link type="text/css" rel="stylesheet" href="../CSS/master.css">
+    <link href="../CSS/master.css" rel="stylesheet" type="text/css">
+    <title>Profile</title>
 </head>
 <body>
-<header>
-    <nav id="topBar">
-        <div id="left">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="">About</a></li>
-            </ul>
+<nav id="topBar">
+    <div id="left">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+    <div id="right">
+        <p>
+            <?php
+                echo "Welcome, " . $user->getName() . " " . $user->getSurname();
+            ?>
+        </p>
+        <div>
+
         </div>
-        <div id="right">
-            <p>
-                <?php
-                echo "Welcome, " . $name . " " . $surname;
-                ?>
-            </p>
-            <div id="profileContainer">
-                <img src="../Images/profile-icon.png" id="imgProfile">
-            </div>
-        </div>
-    </nav>
-</header>
+    </div>
+</nav>
 </body>
 </html>

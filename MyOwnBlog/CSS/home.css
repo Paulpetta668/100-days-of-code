@@ -48,3 +48,11 @@ html, body{
 
     padding-right: 1rem;
 }
+
+#profileContainer{
+
+}
+#profileContainer img{
+    height: inherit;
+    width: inherit;
+}

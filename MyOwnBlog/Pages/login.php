@@ -9,7 +9,7 @@
 
     $conn = new mysqli("localhost", $User, $Pass); // Create connection
 
-    if(isset($_POST["password"]) && isset($_POST["mail"])) {
+    if(isset($_POST["password"]) && isset($_POST["mail"]) && ($_POST["password"] != "" && $_POST["mail"] != "")) {
         $mail = $_POST["mail"]; // Get the mail from the form
         $pass = hash("sha256", $_POST["password"]); //Encrypt the password
 
@@ -28,21 +28,42 @@
             setcookie("login", $userID . "|" . $token, $expire, "/");
 
             $query = "INSERT INTO LogTokens (UserIDf, Token, ExpiryDate) VALUES ($userID, '" . hash('sha256', $token) . "', $expire)";
-            $result = $conn->query($query);
+            $result2 = $conn->query($query);
 
-            if ($result) header("Location: index.php");
-            else { setcookie("login", "", time() - 3600, "/");
+            if ($result2){
+                $mail = $result->fetch_assoc().$row["Email"];
+                sendMail($mail, "Login", "You have logged in to your account");
+
+                header("Location: index.php");
+            }
+            else {
+                setcookie("login", "", time() - 3600, "/");
                 echo "Error: " . $conn->error;
             }
 
+            clearData();
             header("Location: login.php");
         }
         else {
-                echo '<div class="error">
+            clearData();
+            echo '<div class="error">
                             <p>Wrong email or password</p>
+                            <img src="../Images/cancel_icon_black.png" id="errorCancel" onclick="cancelClick()">
                         </div>';
         }
     }
+
+    function clearData(){
+        unset($_POST["password"]);
+        unset($_POST["mail"]);
+    }
+
+function sendMail($to, $subject, $message) {
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+     $_SESSION["mailSent"] = mail($to, $subject, $message, $headers);
+}
 ?>
 
 <!DOCTYPE html>
@@ -63,4 +84,11 @@
 
     <a href="signup.php">Dont have an account? Sign up</a>
 </body>
+
+<script>
+    function cancelClick(){
+        document.getElementsByClassName("error")[0].style.display = "none";
+    }
+</script>
+
 </html>

@@ -17,7 +17,10 @@
             $query = "INSERT INTO User (RoleIDf, Name, Surname, Email, Password, Active) VALUES (3, '$nome', '$cognome', '$mail', '$pass', 1)";
             $result = $conn->query($query);
 
-            if ($result) Header("Location: login.php");
+            if ($result){
+                sendMail();
+                Header("Location: login.php");
+            }
             else echo "Error: " . $conn->error;
         }catch (Exception $e){
             echo "Error: " . $e->getMessage();
@@ -29,6 +32,14 @@
 
             $conn->close();
         }
+    }
+
+    function sendMail(){
+        $to = $_POST["email"];
+        $subject = "Registrazione avvenuta con successo!";
+        $message = "Benvenuto su MyOwnBlog! Ora puoi iniziare a scrivere i tuoi post! Verifica il tuo profilo qui: ";
+
+        mail($to, $subject, $message);
     }
 ?>
 
