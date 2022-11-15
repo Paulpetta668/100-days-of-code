@@ -9,5 +9,5 @@ api.listen(porta, () => {
 });
 
 api.get("/", (req, res) =>{
-    res.send("WOW");
+    res.send("<h1>LMAO</h1>");
 });
