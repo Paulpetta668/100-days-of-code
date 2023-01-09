@@ -1,0 +1,434 @@
+[
+    {
+        "name": "testRaspHome",
+        "temp": "19.0",
+        "hum": "79.0",
+        "date": "2023-01-05T16:44:05.401Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "19.2",
+        "hum": "78.0",
+        "date": "2023-01-05T16:45:05.870Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "19.4",
+        "hum": "77.0",
+        "date": "2023-01-05T16:46:06.334Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "19.5",
+        "hum": "75.0",
+        "date": "2023-01-05T16:47:06.691Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "19.6",
+        "hum": "75.0",
+        "date": "2023-01-05T16:48:07.377Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "19.7",
+        "hum": "75.0",
+        "date": "2023-01-05T16:49:08.117Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "19.8",
+        "hum": "74.0",
+        "date": "2023-01-05T16:50:08.590Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.0",
+        "hum": "73.0",
+        "date": "2023-01-05T16:51:09.076Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.1",
+        "hum": "72.0",
+        "date": "2023-01-05T16:52:11.279Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.1",
+        "hum": "72.0",
+        "date": "2023-01-05T16:53:15.179Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.2",
+        "hum": "72.0",
+        "date": "2023-01-05T16:54:18.771Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.3",
+        "hum": "74.0",
+        "date": "2023-01-05T16:55:19.265Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.3",
+        "hum": "73.0",
+        "date": "2023-01-05T16:56:19.683Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T16:58:20.226Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T16:59:21.152Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.3",
+        "hum": "71.0",
+        "date": "2023-01-05T17:00:21.676Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.3",
+        "hum": "71.0",
+        "date": "2023-01-05T17:01:22.480Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T17:03:23.026Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T17:04:23.541Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T17:05:24.031Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T17:06:24.478Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T17:07:24.932Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.4",
+        "hum": "71.0",
+        "date": "2023-01-05T17:08:25.411Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.5",
+        "hum": "73.0",
+        "date": "2023-01-05T17:09:25.800Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.6",
+        "hum": "73.0",
+        "date": "2023-01-05T17:10:26.247Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.7",
+        "hum": "70.0",
+        "date": "2023-01-05T17:11:26.762Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.7",
+        "hum": "72.0",
+        "date": "2023-01-05T17:12:27.279Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.7",
+        "hum": "72.0",
+        "date": "2023-01-05T17:13:27.799Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.7",
+        "hum": "72.0",
+        "date": "2023-01-05T17:14:28.247Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.8",
+        "hum": "72.0",
+        "date": "2023-01-05T17:15:28.730Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.8",
+        "hum": "72.0",
+        "date": "2023-01-05T17:16:29.145Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.8",
+        "hum": "72.0",
+        "date": "2023-01-05T17:17:29.565Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "71.0",
+        "date": "2023-01-05T17:18:30.288Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "71.0",
+        "date": "2023-01-05T17:19:31.214Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "71.0",
+        "date": "2023-01-05T17:20:31.918Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:21:32.372Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:22:32.815Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:23:33.181Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:24:33.531Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:25:34.016Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:26:34.496Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:27:34.912Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:28:35.369Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:29:35.757Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "73.0",
+        "date": "2023-01-05T17:30:36.167Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:31:36.618Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:32:37.076Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:33:37.756Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:34:38.581Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:35:39.034Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:36:39.412Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:37:39.804Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:38:40.166Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "20.9",
+        "hum": "72.0",
+        "date": "2023-01-05T17:39:40.661Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:40:41.077Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.0",
+        "hum": "72.0",
+        "date": "2023-01-05T17:41:41.596Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:42:42.097Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "73.0",
+        "date": "2023-01-05T17:43:42.531Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:44:42.948Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:45:43.432Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:46:43.839Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:47:44.253Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:48:44.676Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:49:45.095Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.1",
+        "hum": "72.0",
+        "date": "2023-01-05T17:50:45.541Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.2",
+        "hum": "72.0",
+        "date": "2023-01-05T17:51:46.003Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.2",
+        "hum": "72.0",
+        "date": "2023-01-05T17:52:46.411Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.3",
+        "hum": "72.0",
+        "date": "2023-01-05T17:53:46.793Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.3",
+        "hum": "72.0",
+        "date": "2023-01-05T17:54:47.210Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.3",
+        "hum": "72.0",
+        "date": "2023-01-05T17:55:47.727Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.3",
+        "hum": "72.0",
+        "date": "2023-01-05T17:56:48.246Z"
+    },
+    {
+        "name": "testRaspHome",
+        "temp": "21.3",
+        "hum": "72.0",
+        "date": "2023-01-05T17:57:49.168Z"
+    }
+]

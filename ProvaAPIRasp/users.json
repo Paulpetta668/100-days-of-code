@@ -1,0 +1,10 @@
+[
+    {
+        "id": 0,
+        "name": "A",
+        "surname": "B",
+        "email": "dumb@test.com",
+        "phone": "123456789",
+        "password": "hashHere"
+    }
+]

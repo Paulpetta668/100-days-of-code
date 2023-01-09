@@ -121,6 +121,7 @@ class field{
         if(this.field[x][y] == "B") return; //If it's a mine, return
         if(this.field[x][y] != 0 && !(document.getElementById("myTable").children[0].children[x].children[y].children[0].src.includes("flag"))) { //If the tile is not empty, reveal it and return
             document.getElementById("myTable").children[0].children[x].children[y].children[0].src = "./Images/"+this.field[x][y]+".png"; 
+            document.getElementById("myTable").children[0].children[x].children[y].children[0].addEventListener(this.click, this.#clickCheck(x, y));
             return;
         }
         if(!document.getElementById("myTable").children[0].children[x].children[y].children[0].src.includes("Images/TILE.png")) return; //If the tile is already revealed, return
@@ -149,6 +150,9 @@ class field{
     }
 
     #clickCheck(x, y){
+        
+    }
+    #countFlags(x, y){
 
     }
 }
