@@ -1,76 +1,83 @@
 <html>
-    <head>
-        <title>Minesweepers</title>
-        <link rel="stylesheet" href="EndStyle.css">
-    </head>
-    <body onload="start()">
-        <svg width="100" height="100">
-            <path d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="#FF0000"/>
-          </svg>
-        <nav>
-            <select id="mode">
-                <option value="1">Beginner</option>
-                <option value="2">Intermediate</option>
-                <option value="3" selected>Expert</option>
-            </select>
-        </nav>
-        <div>
-            <div id="utility">
-                <a id="reset" style="cursor: pointer;">Restart</a>
-                <p id="numMines">Mines: xx</p>
-            </div>
-            <table id="myTable">
-                <tbody>
 
-                </tbody>
-            </table>
-        </div>
+<head>
+    <title>Minesweepers</title>
+    <link rel="stylesheet" href="EndStyle.css">
+</head>
 
-        <a id="error">
-            
-        </a>
-        
-        <script src="field.js" type="text/javascript"></script>
-        <script src="game.js" type="text/javascript"></script>
-    </body>
+<body onload="start()">
+    <nav>
+        <select id="mode">
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3" selected>Expert</option>
+        </select>
+    </nav>
 
-    <style>
-        nav{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
+    <div id="utility">
+        <a id="reset" style="cursor: pointer;">Restart</a>
+        <p id="numMines">Mines: xx</p>
+    </div>
+    <table id="myTable" style="z-index: 999;">
+        <tbody>
 
-            height: 5vh;
-            background-color: black;
-        }
-        nav *{
-            color: white;
-            font-size: 2vh;
-            margin: 0.5vh;
-        }
+        </tbody>
+    </table>
 
-        #mode{
-            border: none;
-            background-color: transparent;
-        }
+    <a id="error">
 
-        .tile{
-            width: 40px;
-            height: 40px;
-            border: 1px solid black;
-            border-radius: 2px;
+    </a>
 
-            margin: 0; padding: 0;
-        }
+    <script src="field.js" type="text/javascript"></script>
+    <script src="game.js" type="text/javascript"></script>
+</body>
 
-        *{
-            margin: 0; padding: 0;
-        }
+<style>
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
 
-        #myTable{
-            border-collapse: collapse;
-            border: 1px solid black;
-            margin: 10vh auto;
-        }
-    </style>
+        height: 5vh;
+        background-color: black;
+    }
+
+    nav * {
+        color: white;
+        font-size: 2vh;
+        margin: 0.5vh;
+    }
+
+    #mode {
+        border: none;
+        background-color: transparent;
+    }
+
+    #mode option{
+        background-color: black;
+        color: white;
+    }
+
+    .tile {
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 2px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #myTable {
+        border-collapse: collapse;
+        border: 1px solid black;
+        margin: 10vh auto;
+    }
+</style>
+
 </html>

@@ -1,5 +1,4 @@
 const express = require("express");
-
 const api = express();
 
 const porta = 40000;

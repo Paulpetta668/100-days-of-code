@@ -86,6 +86,7 @@ class field{
 
     click(x, y, obj){
         if(this.lost) return;
+        if(document.getElementById("myTable").children[0].children[x].children[y].children[0].src.includes("flag")) return;
         if(this.field[x][y] == "B"){
             this.lost = true;
             document.getElementById("error").innerHTML = "You lost!";
