@@ -1,0 +1,14 @@
+{
+  "name": "apitermometro",
+  "version": "1.0.0",
+  "description": "API che serve alla raccolta dei dati di temperatura vediamo come va",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
