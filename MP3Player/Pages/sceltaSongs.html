@@ -9,7 +9,45 @@
 </head>
 <body>
     <div>
-        <input type="text">
+        <input type="text" oninput="changeInput(this);">
+    </div>
+    <div id="list">
+        
     </div>
 </body>
+
+<script>
+    const url = "http://localhost:32768/song/";
+    const list = document.getElementById("list");
+
+    function changeInput(obj){
+        if(obj.value == ""){
+            list.innerHTML = "";
+            return;
+        }
+
+        let val = obj.value;
+
+        fetch(url + val).then((response) => {
+            if(response.status != 200){
+                console.log("Errore: " + response.status);
+
+                list.innerHTML = "";
+                return;
+            }
+
+            response.json().then((data) => {
+                console.log(data);
+
+                list.innerHTML = "";
+                list.innerHTML += "<ul>";
+                for(song of data.songs){
+                    list.innerHTML += "<li>" + song.name + "</li>";
+                }
+                list.innerHTML += "</ul>";
+            });
+        });
+    }
+</script>
+
 </html>
