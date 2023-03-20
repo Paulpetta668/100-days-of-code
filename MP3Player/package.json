@@ -1,0 +1,15 @@
+{
+  "name": "mp3player",
+  "version": "0.1.0",
+  "description": "API that allows you to play music on an app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
