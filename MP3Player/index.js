@@ -1,21 +1,29 @@
 const express = require("express");
 const fs = require("fs");
-const sqlite = require("sqlite3").verbose();
+const mysql = require('mysql');
+const Utils = require("./dbUtils.js");
 
 const api = express();
-const db = new sqlite.Database("Roba", (err) => {
-    if(err){
-        console.log("Errore nel caricamento del database");
-    }else{
-        console.log("Database caricato correttamente");
-    }
-});
+const db = new Utils(mysql);
 
 const porta = 35000;
 const pathPrefix = "./MP3s";
 
 api.listen(porta, () => {
     console.log("Api avviata e in ascolto sulla porta " + porta);
+    
+});
+
+api.use(express.json());
+api.use(express.urlencoded({ extended: true }));
+api.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "*");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    if (req.method === "OPTIONS") {
+      return res.sendStatus(200);
+    }
+    next();
 });
 
 api.get("/song/:filename", (req, res) =>{
@@ -34,10 +42,34 @@ api.get("/song/:filename", (req, res) =>{
             json["songs"].push(song);
         }
 
-        res.header("Access-Control-Allow-Origin", "*");
         res.status(200).send(json);
     }else{
         res.status(300).send("File non trovato");
+    }
+});
+
+api.post("/user/login", (req, res) =>{
+    let username = req.body.username;
+    let password = req.body.password;
+
+    try{
+        if(db.loginUser(username, password)) res.status(200).send("Utente trovato!");
+        else res.status(400).send("Utente non trovato!");
+    }catch(err){
+        res.status(300).send("Errore: " + err);
+    }
+});
+
+api.post("/user/signup", (req, res) =>{
+    let username = req.body.username;
+    let password = req.body.password;
+    let email = req.body.email;
+
+    try{
+        if(db.registerUser(username, password, email)) res.status(200).send("Utente registrato!");
+        else res.status(400).send("Utente non registrato!");
+    }catch(err){
+        res.status(300).send("Errore: " + err);
     }
 });
 

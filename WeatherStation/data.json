@@ -1,0 +1,80 @@
+{
+    "coord": {
+        "lon": 8.6358,
+        "lat": 45.7318
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": 'Clear',
+            "description": 'clear sky',
+            "icon": '01d'
+        }
+    ],
+    "base": 'stations',
+    "main": {
+      temp: 292.98,
+      feels_like: 292.3,
+      temp_min: 291.66,
+      temp_max: 294.04,
+      pressure: 999,
+      humidity: 49
+    },
+    visibility: 10000,
+    wind: { speed: 2.68, deg: 112, gust: 3.58
+    },
+    clouds: { all: 0
+    },
+    dt: 1679584425,
+    sys: {
+      type: 2,
+      id: 2012529,
+      country: 'IT',
+      sunrise: 1679549021,
+      sunset: 1679593233
+    },
+    timezone: 3600,
+    id: 3166604,
+    name: 'Sesto Calende',
+    cod: 200
+}
+  [nodemon
+] clean exit - waiting for changes before restart
+  [nodemon
+] restarting due to changes...
+  [nodemon
+] starting `node index.js`
+  {
+    coord: { lon: 8.6358, lat: 45.7318
+    },
+    weather: [
+        { id: 800, main: 'Clear', description: 'clear sky', icon: '01d'
+        }
+    ],        
+    base: 'stations',
+    main: {
+      temp: 292.98,
+      feels_like: 292.3,
+      temp_min: 291.66,
+      temp_max: 294.04,
+      pressure: 999,
+      humidity: 49
+    },
+    visibility: 10000,
+    wind: { speed: 2.68, deg: 112, gust: 3.58
+    },
+    clouds: { all: 0
+    },
+    dt: 1679584425,
+    sys: {
+      type: 2,
+      id: 2012529,
+      country: 'IT',
+      sunrise: 1679549021,
+      sunset: 1679593233
+    },
+    timezone: 3600,
+    id: 3166604,
+    name: 'Sesto Calende',
+    cod: 200
+}

@@ -17,7 +17,7 @@
 </body>
 
 <script>
-    const url = "http://localhost:32768/song/";
+    const url = "http://localhost:35000/song/";
     const list = document.getElementById("list");
 
     function changeInput(obj){
@@ -28,25 +28,30 @@
 
         let val = obj.value;
 
-        fetch(url + val).then((response) => {
-            if(response.status != 200){
-                console.log("Errore: " + response.status);
+        try{
+            fetch(url + val).then((response) => {
+                if(response.status != 200){
+                    console.log("Errore: " + response.status);
 
-                list.innerHTML = "";
-                return;
-            }
-
-            response.json().then((data) => {
-                console.log(data);
-
-                list.innerHTML = "";
-                list.innerHTML += "<ul>";
-                for(song of data.songs){
-                    list.innerHTML += "<li>" + song.name + "</li>";
+                    list.innerHTML = "";
+                    return;
                 }
-                list.innerHTML += "</ul>";
+
+                response.json().then((data) => {
+                    console.log(data);
+
+                    list.innerHTML = "";
+                    list.innerHTML += "<ul>";
+                    for(song of data.songs){
+                        list.innerHTML += "<li>" + song.name + "</li>";
+                    }
+                    list.innerHTML += "</ul>";
+                });
             });
-        });
+        }catch(e){
+            console.log("Errore: " + e);
+            list.innerHTML = "";
+        }
     }
 </script>
 
