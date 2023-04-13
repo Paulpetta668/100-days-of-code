@@ -1,6 +1,6 @@
 const http = require('http');
 
-const apiID = "xxx"; //7178f338c31577147f5cdb284f03cb50
+const apiID = "xxx"; 
 
 //Sesto Calende
 const lat = "45.731833";
