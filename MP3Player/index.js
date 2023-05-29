@@ -59,7 +59,6 @@ api.post("/user/login", (req, res) =>{
         res.status(300).send("Errore: " + err);
     }
 });
-
 api.post("/user/signup", (req, res) =>{
     let username = req.body.username;
     let password = req.body.password;

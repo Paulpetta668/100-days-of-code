@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>PicnicExtractor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Primo: </h2>
+        <h2>Secondo: </h2>
+        <h2>Contorno: </h2>
+        <h2>Dolce: </h2>
+        <h2>Bevanda: </h2>
+        <h2>Frutta: </h2>
+    </div>
+    <button id="button" onclick="Genera();">Genera</button>
+</body>
+
+<script>
+    let persone = ["Baolo", "Strunza"];
+    let pCount = 3;
+    let sCount = 3;
+
+    function Genera() {
+        let obj = document.getElementById("wrapper");
+        let objects = obj.getElementsByTagName("h2");
+
+        for(let i = 0; i < objects.length; i++){
+            let r = Math.floor(Math.random() * persone.length);
+
+            if(r == 0) pCount--;
+            else sCount--;
+
+            if(pCount < 0) persone.splice(0, 1);
+            if(sCount < 0) persone.splice(1, 1);
+
+            objects[i].innerHTML += persone[r];
+
+        }
+    }
+</script>
+</html>
